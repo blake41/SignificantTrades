@@ -586,8 +586,6 @@ export default {
   }
 
   &.-liquidation {
-    background-color: $pink !important;
-    color: white !important;
 
     .trade__exchange {
       flex-grow: 0;
