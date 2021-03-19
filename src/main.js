@@ -8,14 +8,12 @@ import './assets/sass/app.scss'
 import store from './store'
 
 const vueEnv = process.env
-
 for (let key in vueEnv) {
   const match = key.match(/^VUE_APP_(.*)/)
   if (match && match[1]) {
     store.commit(`app/SET_${match[1]}`, vueEnv[key])
   }
 }
-
 Vue.use(ModalDialogs)
 
 Vue.use(VueTippy, {

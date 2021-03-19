@@ -1,5 +1,5 @@
 var date = new Date()
-
+console.log(process.env.VUE_APP_PROXY_URL)
 process.env.VUE_APP_VERSION = require('./package.json').version
 process.env.VUE_APP_BUILD_DATE = date.getDate() + ' ' + date.toLocaleString('en-US', { month: 'short' }).toLowerCase()
 process.env.VUE_APP_PROXY_URL = process.env.PROXY_URL
