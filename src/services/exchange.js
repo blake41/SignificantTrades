@@ -264,12 +264,12 @@ class Exchange extends EventEmitter {
 
     console.log(`[${this.id}] fetching products...`, urls)
 
+    
     return new Promise(resolve => {
       return Promise.all(
-        console.log(`[${this.id}] ${urls}`)
         urls.map(action => {
-          action = action.split('|')
-          console.log(`[${this.id}] ${action}`)
+          action = action.split('|');
+          console.log(`[${this.id}] ${action}`);
           let method = action.length > 1 ? action.shift() : 'GET'
           let url = action[0]
 
