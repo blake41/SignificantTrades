@@ -274,13 +274,12 @@ class Exchange extends EventEmitter {
             action.shift()
           }
           let url = action[0]
-
           return new Promise(resolve => {
             setTimeout(() => {
               resolve(
                 fetch(`${store.state.app.proxyUrl ? store.state.app.proxyUrl : ''}`, {
                   method: 'POST', 
-                  body: {'my-url': url }
+                  body: JSON.stringify({'my-url': url })
                 })
                   .then(response => response.json())
                   .catch(err => {
