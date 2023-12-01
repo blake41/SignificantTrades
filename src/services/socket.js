@@ -14,7 +14,6 @@ import Okex from '../exchanges/okex'
 import Poloniex from '../exchanges/poloniex'
 import Deribit from '../exchanges/deribit'
 import Bybit from '../exchanges/bybit'
-import Ftx from '../exchanges/ftx'
 
 import store from '../store'
 import { formatAmount } from '../utils/helpers'
@@ -50,8 +49,7 @@ const emitter = new Vue({
         new Deribit(),
         new Huobi(),
         new Hitbtc(),
-        new Bybit(),
-        new Ftx()
+        new Bybit()
       ]
     }
   },

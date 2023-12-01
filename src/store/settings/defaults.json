@@ -8,7 +8,6 @@
     { "amount": 10000000, "gif": "explosion", "buyColor": "rgb(255,160,0)", "sellColor": "rgb(233,30,99)" }
   ],
   "exchanges": {
-    "ftx": { "disabled": true },
     "liquid": { "disabled": true },
     "bithumb": { "disabled": true },
     "hitbtc": { "disabled": true },

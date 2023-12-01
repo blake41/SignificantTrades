@@ -30,8 +30,7 @@ module.exports = {
       'https://api.liquid.com',
       'https://www.deribit.com',
       'https://fapi.binance.com',
-      'https://api.hbdm.com',
-      'https://ftx.com'
+      'https://api.hbdm.com'
     ].reduce((obj, domain) => {
       const reg = `${domain}`
 
