@@ -270,7 +270,9 @@ class Exchange extends EventEmitter {
         urls.map(action => {
           action = action.split('|');
           console.log(`[${this.id}] ${action}`);
-          let method = action.length > 1 ? action.shift() : 'GET'
+          if(action.length > 1 ) {
+            action.shift()
+          }
           let url = action[0]
 
           return new Promise(resolve => {
