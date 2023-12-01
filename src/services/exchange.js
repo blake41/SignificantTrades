@@ -277,7 +277,8 @@ class Exchange extends EventEmitter {
             setTimeout(() => {
               resolve(
                 fetch(`${store.state.app.proxyUrl ? store.state.app.proxyUrl : ''}`, {
-                  method: method, headers: { 'my-url': url }
+                  method: 'POST', 
+                  body: {'my-url': url }
                 })
                   .then(response => response.json())
                   .catch(err => {
